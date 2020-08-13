@@ -1,0 +1,122 @@
+
+@media (prefers-color-scheme: dark) {
+/* incluir nessa área todos os estilos referentes ao modo noturno */
+body{
+    background-color: rgb(5, 5, 5);
+}
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    color: grey;
+}
+
+.form-control{
+    max-width: 90px;
+    display: inline;
+
+}
+
+.card{
+    margin-top: 50px;            
+    text-align: center;
+    background: rgb(73, 73, 73);
+    background: linear-gradient(90deg, rgb(65, 64, 64) 5%, rgb(35, 45, 53) 75%, rgb(7, 63, 109) 100%);
+    border: none;
+    box-shadow: -5px 12px 15px 5px rgba(53, 52, 52, 0.75);
+}
+
+.card-body{
+    min-height: 180px;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.col-xs-6, .col-md-6{
+    margin: auto;
+}
+
+#resultado{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+footer {
+    background-color: #ffffff;
+    font-family: 'Arvo', serif;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* <-- Aparentemente, algumas margens ainda estão lá, apesar de estar ocultas */
+}
+
+input[type=number] {
+-moz-appearance:textfield; /* Firefox */
+}
+
+}
+body{
+    background-color: rgb(189, 182, 182);
+}
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.form-control{
+    max-width: 90px;
+    display: inline;
+
+}
+
+.card{
+    margin-top: 50px;            
+    text-align: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 5%, rgba(120,195,255,1) 75%, rgba(0,142,255,1) 100%);
+    border: none;
+    box-shadow: -5px 12px 15px 5px rgba(53, 52, 52, 0.75);
+}
+
+.card-body{
+    min-height: 180px;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.col-xs-6, .col-md-6{
+    margin: auto;
+}
+
+#resultado{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+footer {
+    background-color: #ffffff;
+    font-family: 'Arvo', serif;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* <-- Aparentemente, algumas margens ainda estão lá, apesar de estar ocultas */
+}
+
+input[type=number] {
+-moz-appearance:textfield; /* Firefox */
+}

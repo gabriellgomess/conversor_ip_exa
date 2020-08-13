@@ -1,0 +1,107 @@
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Varela+Round&family=Lobster&family=Arvo&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_day.css">
+
+<title>JavaScript Example</title>
+</head>
+
+<body>
+
+    <div class="container">        
+        <div class="row">
+            <div class="col-xs-6 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <h3>CONVERSOR DE IP EM EXADECIMAL</h3>
+                                <input id="oct1" class="form-control" type="number"> :</input>
+                                <input id="oct2" class="form-control" type="number"> :</input>
+                                <input id="oct3" class="form-control" type="number"> :</input>
+                                <input id="oct4" class="form-control" type="number"></input>
+                                <input type="button" class="btn btn-primary" value="CALCULAR" onclick="calcular()">
+                                <input type="reset" class="btn btn-dark" value="Limpar" onclick="limpar()">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="resultado">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+	<script>
+
+           
+
+        function calcular(){
+           
+           //PEGANDO A ID E ATRIBUINDO À VARIÁVEL AO MESMO TEMPO QUE CONVERTE PARA INTEIRO   
+            var oct1 = parseInt(document.getElementById('oct1').value);
+            var oct2 = parseInt(document.getElementById('oct2').value);
+            var oct3 = parseInt(document.getElementById('oct3').value);
+            var oct4 = parseInt(document.getElementById('oct4').value);
+
+            
+
+            // CONVERTENDO O INTEIRO DECIMAL E EXADECIMAL E TRANSFORMANDO EM STRING E ATRIBUINDO À VARIAVEL
+            var exa1 = oct1.toString(16);
+            var exa2 = oct2.toString(16);
+            var exa3 = oct3.toString(16);
+            var exa4 = oct4.toString(16);
+
+           
+            if (exa1.length == 1) {
+                var octeto1 = "0"+exa1.toUpperCase();
+            }else{
+                var octeto1 = exa1.toUpperCase();
+            }
+
+            if (exa2.length == 1) {
+                var octeto2 = "0"+exa2.toUpperCase();
+            }else{
+                var octeto2 = exa2.toUpperCase();
+            }
+
+            if (exa3.length == 1) {
+                var octeto3 = "0"+exa3.toUpperCase();
+            }else{
+                var octeto3 = exa3.toUpperCase();
+            }
+
+            if (exa4.length == 1) {
+                var octeto4 = "0"+exa4.toUpperCase();
+            }else{
+                var octeto4 = exa4.toUpperCase();
+            }
+
+            var resposta = document.getElementById('resultado');
+
+            resposta.innerHTML = octeto1+octeto2+octeto3+octeto4;
+
+        }
+
+        function limpar(){
+            var emBranco = document.getElementById('resultado');
+            emBranco.innerHTML = '';
+        }
+
+    </script>
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted"><h5>Gabriel Gomes - Developer WEB</h5></span>
+        </div>
+    </footer>    
+</body>
+
+</html>
